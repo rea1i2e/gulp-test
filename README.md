@@ -10,3 +10,7 @@
 - gulp とコマンドを叩けばタスクランナー起動
 - あとは、そのまま使える
 
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+echo ' export PATH=~/.npm-global/bin:$PATH' >> ~/.bash_profile
+source ~/.bash_profile
