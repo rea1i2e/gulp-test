@@ -200,8 +200,44 @@ select::-ms-expand {
   }
 }
 
+.test__box--size-null {
+  background-color: #5cd65c;
+  border: 1px dashed #111;
+}
+
+.test__box {
+  background-color: #d6d65c;
+  border: 1px dashed #111;
+  height: 100px;
+  height: 6.25rem;
+  width: 100px;
+  width: 6.25rem;
+}
+
 .appp {
   margin: 1px;
+}
+
+.test__section {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+
+.test__box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.test__box-wrapper--width500px {
+  width: 500px;
+  width: 31.25rem;
+}
+
+.test__box-wrapper--fitcontent {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .test {
@@ -212,6 +248,6 @@ select::-ms-expand {
 }
 
 body {
-  font-size: 60px;
-  font-size: 3.75rem;
+  font-size: 16px;
+  font-size: 1rem;
 }

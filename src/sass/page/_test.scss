@@ -1,0 +1,15 @@
+.test__section {
+  margin-bottom: rem(32);
+}
+.test__box-wrapper {
+  display: flex;
+  // width: fit-content;
+}
+
+.test__box-wrapper--width500px {
+  width: rem(500);
+}
+
+.test__box-wrapper--fitcontent {
+  width: fit-content;
+}

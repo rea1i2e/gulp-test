@@ -1,0 +1,3 @@
+@mixin _test-background-color($hue) {
+  background-color: hsl( $hue, 60, 60 );
+}

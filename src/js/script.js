@@ -48,3 +48,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 });
+
+$(function () {
+  let width = $('.test__box').outerWidth(true); // スライド1枚の幅
+  $('.js-box').css('width', width);
+  $('.js-box').css('height', '80');
+});

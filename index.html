@@ -24,8 +24,55 @@
   <script defer type="text/javascript" src="./assets/js/script.js"></script>
 </head>
 <body>
-  テスト
-  テスト
+  <!-- <div class="test__box"></div>
+  <div class="test__box--size-null js-box"></div> -->
+  <h2>複数の正方形を横に並べる</h2>
+  <section class="test__section">
+    <h3>合計幅＜画面幅</h3>
+    <p>正方形は歪まない</p>
+    <div class="test__box-wrapper">
+      <div class="test__box"></div>
+      <div class="test__box"></div>
+      <div class="test__box"></div>
+    </div><!-- /.box-wrapper -->
+  </section><!-- /.test-section -->
+
+  <section class="test__section">
+  <h3>合計幅>画面幅</h3>
+  <p>幅が縮んで、形が崩れる</p>
+  <div class="test__box-wrapper">
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+  </div><!-- /.box-wrapper -->
+</section><!-- /.test-section -->
+
+<section class="test__section">
+  <h3>対処法2　親要素に幅を指定</h3>
+  <p>幅が画面の外まで広がり、形が崩れない。正方形の数が増えると幅も変える必要がある。</p>
+  <div class="test__box-wrapper test__box-wrapper--width500px">
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+  </div><!-- /.box-wrapper -->
+</section><!-- /.test-section -->
+
+<section class="test__section">
+<h3>対処法3　親要素の幅にfit-contentを指定</h3>
+<p>幅が画面の外まで広がり、形が崩れない。正方形の数が増えると幅も変える必要がある。</p>
+<div class="test__box-wrapper test__box-wrapper--fitcontent">
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+</div><!-- /.box-wrapper -->
+</section><!-- /.test-section -->
+
 
 </body>
 </html>

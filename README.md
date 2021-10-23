@@ -10,7 +10,14 @@
 - gulp とコマンドを叩けばタスクランナー起動
 - あとは、そのまま使える
 
+# 導入時のコマンド（追記）
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 echo ' export PATH=~/.npm-global/bin:$PATH' >> ~/.bash_profile
 source ~/.bash_profile
+npm i -g gulp
+gulp
+
+# VScode起動時のコマンド（追記）
+source ~/.bash_profile
+gulp

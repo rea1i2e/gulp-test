@@ -1,0 +1,5 @@
+// サイズ指定の正方形
+@mixin _test-square($size) {
+  height: rem($size);
+  width: rem($size);
+}
