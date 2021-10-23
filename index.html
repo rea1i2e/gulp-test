@@ -46,13 +46,15 @@
     <div class="test__box"></div>
     <div class="test__box"></div>
     <div class="test__box"></div>
+    <div class="test__box"></div>
   </div><!-- /.box-wrapper -->
 </section><!-- /.test-section -->
 
 <section class="test__section">
   <h3>対処法2　親要素に幅を指定</h3>
   <p>幅が画面の外まで広がり、形が崩れない。正方形の数が増えると幅も変える必要がある。</p>
-  <div class="test__box-wrapper test__box-wrapper--width500px">
+  <div class="test__box-wrapper test__box-wrapper--width600px">
+    <div class="test__box"></div>
     <div class="test__box"></div>
     <div class="test__box"></div>
     <div class="test__box"></div>
@@ -63,8 +65,22 @@
 
 <section class="test__section">
 <h3>対処法3　親要素の幅にfit-contentを指定</h3>
-<p>幅が画面の外まで広がり、形が崩れない。正方形の数が増えると幅も変える必要がある。</p>
+<p>要素が増えても、親要素の幅も自動的に増える。ブラウザによっては、fit-contentという値に対応していないかも（確認中）</p>
 <div class="test__box-wrapper test__box-wrapper--fitcontent">
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+</div><!-- /.box-wrapper -->
+</section><!-- /.test-section -->
+
+<section class="test__section">
+<h3>対処法4　親要素の幅をJavaScriptで指定</h3>
+<p>正方形の幅 x 正方形の数という形で動的に指定する。</p>
+<div class="test__box-wrapper js-test__box-wrapper">
+  <div class="test__box"></div>
   <div class="test__box"></div>
   <div class="test__box"></div>
   <div class="test__box"></div>

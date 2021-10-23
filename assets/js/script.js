@@ -43,8 +43,12 @@ jQuery(function ($) {
   });
 });
 $(function () {
-  var width = $('.test__box').outerWidth(true); // スライド1枚の幅
+  var width = $('.test__box').outerWidth(true); // test__boxの幅を変数に代入
 
-  $('.js-box').css('width', width);
-  $('.js-box').css('height', '80');
+  var length = $('.js-test__box-wrapper .test__box').length; // test__boxの数を変数に代入
+
+  var boxWrapperWidth = width * length; // 親要素の幅 = test__boxの幅 × 数
+
+  $('.js-test__box-wrapper').css('width', boxWrapperWidth);
+  親要素の幅を変更;
 });
