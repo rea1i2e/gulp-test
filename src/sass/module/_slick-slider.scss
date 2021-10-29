@@ -1,0 +1,56 @@
+.js-costum-dots {
+  position: absolute;
+  bottom: rem(-25);
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.js-costum-dots li {
+  position: relative;
+  display: inline-block;
+  width: rem(8);
+  height: rem(8);
+  margin: 0  rem(5);
+  padding: 0;
+  cursor: pointer;
+}
+
+.js-costum-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: rem(8);
+  height: rem(8);
+  padding: rem(5);
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.js-costum-dots li button:before {
+  font-family: 'slick';
+  // font-size: rem(6);
+  // line-height: rem(20);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: rem(8);
+  height: rem(8);
+  content: '';
+  text-align: center;
+  // opacity: .25;
+  color: black;
+  background-color: $dot-color-defalt;
+  border-radius: 50%;
+}
+
+// 表示されている画像に対応するページネーションのスタイル
+.js-costum-dots li.slick-active button::before {
+  background-color: $accent-color;
+}

@@ -1,0 +1,16 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination-circle {
+  margin: 0 rem(5.5);
+  width: rem(8);
+  height: rem(8);
+  border-radius: 50%;
+  background-color: $dot-color-defalt;
+  cursor: pointer;
+}
+/* jsでtargetクラスがついたら背景色を変える */
+.pagination-circle.target {
+  background-color: $accent-color;
+}

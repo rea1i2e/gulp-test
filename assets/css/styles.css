@@ -184,6 +184,52 @@ select::-ms-expand {
   margin: 1px;
 }
 
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 100%;
+}
+
+.carousel__list {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.image-wrapper::before {
+  content: "";
+  display: block;
+  padding-top: 69.83842%;
+}
+
+.image-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .l-inner {
   width: 100%;
   padding-right: 20px;
@@ -200,6 +246,94 @@ select::-ms-expand {
   }
 }
 
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination-circle {
+  margin: 0 5.5px;
+  margin: 0 0.34375rem;
+  width: 8px;
+  width: 0.5rem;
+  height: 8px;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  cursor: pointer;
+}
+
+/* jsでtargetクラスがついたら背景色を変える */
+.pagination-circle.target {
+  background-color: #f9f871;
+}
+
+.js-costum-dots {
+  position: absolute;
+  bottom: -25px;
+  bottom: -1.5625rem;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.js-costum-dots li {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  width: 0.5rem;
+  height: 8px;
+  height: 0.5rem;
+  margin: 0 5px;
+  margin: 0 0.3125rem;
+  padding: 0;
+  cursor: pointer;
+}
+
+.js-costum-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 8px;
+  width: 0.5rem;
+  height: 8px;
+  height: 0.5rem;
+  padding: 5px;
+  padding: 0.3125rem;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.js-costum-dots li button:before {
+  font-family: 'slick';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  width: 0.5rem;
+  height: 8px;
+  height: 0.5rem;
+  content: '';
+  text-align: center;
+  color: black;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+}
+
+.js-costum-dots li.slick-active button::before {
+  background-color: #f9f871;
+}
+
 .test__box--size-null {
   background-color: #5cd65c;
   border: 1px dashed #111;
@@ -214,13 +348,17 @@ select::-ms-expand {
   width: 6.25rem;
 }
 
+.test-section {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+
 .appp {
   margin: 1px;
 }
 
-.test__section {
-  margin-bottom: 32px;
-  margin-bottom: 2rem;
+.slider-test__slick-slider {
+  width: 50%;
 }
 
 .test__box-wrapper {
@@ -250,4 +388,9 @@ select::-ms-expand {
 body {
   font-size: 16px;
   font-size: 1rem;
+}
+
+.space {
+  height: 64px;
+  height: 4rem;
 }

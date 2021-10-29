@@ -1,6 +1,6 @@
 .test__box {
   @include _test-background-color(60);
-  border: 1px dashed $black;
+  border: 1px dashed $black1;
   height: rem(100);
   width: rem(100);
 }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script defer type="text/javascript" src="./assets/js/script.js"></script>
+</head>
+<body>
+  <a href="index.html">HOME</a>
+  <h1>widthの制御</h1>
+  <!-- <div class="test__box"></div>
+  <div class="test__box--size-null js-box"></div> -->
+  <h2>複数の正方形を横に並べる</h2>
+  <section class="test-section">
+    <h3>合計幅＜画面幅</h3>
+    <p>正方形は歪まない</p>
+    <div class="test__box-wrapper">
+      <div class="test__box"></div>
+      <div class="test__box"></div>
+      <div class="test__box"></div>
+    </div><!-- /.box-wrapper -->
+  </section><!-- /.test-section -->
+
+  <section class="test-section">
+  <h3>合計幅>画面幅</h3>
+  <p>幅が縮んで、形が崩れる</p>
+  <div class="test__box-wrapper">
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+  </div><!-- /.box-wrapper -->
+</section><!-- /.test-section -->
+
+<section class="test-section">
+  <h3>対処法2　親要素に幅を指定</h3>
+  <p>幅が画面の外まで広がり、形が崩れない。正方形の数が増えると幅も変える必要がある。</p>
+  <div class="test__box-wrapper test__box-wrapper--width600px">
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+    <div class="test__box"></div>
+  </div><!-- /.box-wrapper -->
+</section><!-- /.test-section -->
+
+<section class="test-section">
+<h3>対処法3　親要素の幅にfit-contentを指定</h3>
+<p>要素が増えても、親要素の幅も自動的に増える。ブラウザによっては、fit-contentという値に対応していないかも（確認中）</p>
+<div class="test__box-wrapper test__box-wrapper--fitcontent">
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+</div><!-- /.box-wrapper -->
+</section><!-- /.test-section -->
+
+<section class="test-section">
+<h3>対処法4　親要素の幅をJavaScriptで指定</h3>
+<p>正方形の幅 x 正方形の数という形で動的に指定する。</p>
+<div class="test__box-wrapper js-test__box-wrapper">
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+  <div class="test__box"></div>
+</div><!-- /.box-wrapper -->
+</section><!-- /.test-section -->
+
+
+</body>
+</html>

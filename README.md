@@ -19,5 +19,4 @@ npm i -g gulp
 gulp
 
 # VScode起動時のコマンド（追記）
-source ~/.bash_profile
-gulp
+npx gulp

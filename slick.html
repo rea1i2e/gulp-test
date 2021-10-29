@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  
+  <!-- css for slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script defer type="text/javascript" src="./assets/js/script.js"></script>
+
+</head>
+<body>
+  <section class="slider-test">
+  <h1>slick</h1>
+  <a href="index.html">HOME</a>
+  <a href="width.html">width</a>
+  <a href="pagination.html">pagination</a>
+  <a href="swiper.html">swiper</a>
+  <a href="slick.html">slick</a>
+
+    <!-- <div class="slider-test__slick-slider slick-slider-box"> -->
+      <div class="slider-test__slick-slider slick-slider js-slick-slider">
+        <div class="image"><img src="assets/images/top/works-image01.jpg" alt="test"></div>
+        <div class="image"><img src="assets/images/top/works-image02.jpg" alt="test"></div>
+        <div class="image"><img src="assets/images/top/works-image03.jpg" alt="test"></div>
+      </div>
+    <!-- </div>/.slider-area -->
+  </section><!-- /.slider-test -->
+
+  <!-- jqueryの読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <!-- slick用のjs読み込み -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- slick動かす命令-->
+  <script>
+    $('.js-slick-slider').slick({ 
+      arrows: false,
+      autoplay: true,
+      dots: true, 
+      dotsClass: "js-costum-dots", // dotsのクラス名を変更
+      swipe: true,
+    });  
+ </script>
+</body>
+</html>
